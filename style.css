@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --roxoescuro: #230435;
+    --roxoescuro2: #1d052e;
+    --white: #FFF;
+    --dark4: #89a7b1;
+    --dark3: #22042e;
+    --nome: #7e19a7;
+    --roxoescuro3: #b029e6;
+}
+
+body{
+    background-color: var(--roxoescuro);
+    height: 100vh;
+    font-family: 'Lato';
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--roxoescuro2);
+    min-height: 50px;
+}
+
+.box-img-header{
+    height: 100%;
+}
+
+.img-logo{
+    max-width: 60px;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--white)
+}
+
+.nav-links:hover{
+    color: var(--dark4);
+    transition: .4s;
+    text-decoration: underline;
+}
+
+.box-btn-actions{
+    display: flex;
+    gap: 1rem;
+}
+
+:is(button,.link-action){
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-action{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.btn-action:hover{
+    background-color: var(--roxoescuro);
+    border: 1px solid var(--roxoescuro);
+}
+
+.link-action{
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+}
+
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 300px;
+}
+
+h1{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: 8px;   
+}
+
+strong{
+    color: var(--nome)
+}
+
+.first-section{
+    color: var(--white);
+}
+
+.box-img-main{
+    max-width: 450px;
+    padding: 1px;   
+}
+
+.img-profile{
+    width: 90%;
+    border-radius: 100%;
+    margin-top: -50px;
+}
+
+:is(.second-section,.fourth-section){
+    background-color: var(--roxoescuro2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.second-section ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    color: var(--roxoescuro3)
+}
+
+.second-section ul li:hover{
+    color: var(--white);
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: .3s;
+    cursor: default;
+}
+
+.title{
+    color: var(--white);
+}
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.third-section > div{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.third-section > div img{
+    width: 250px;
+    border-radius: 10px;
+
+}
+
+.third-section > div p{
+    max-width: 600px;
+    color: var(--white);
+    text-align: justify;
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+#my-projects-list a{
+    text-decoration: none;
+    color: var(--roxoescuro3);
+}
+
+#my-projects-list a:hover{
+    transition: .3s;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.img-profile{
+
+}
+
+:is(.img-profile,.img-who-am-i){
+    box-shadow: 1px 1px 1px 1px var(--nome);
+
+}
+
+
+
